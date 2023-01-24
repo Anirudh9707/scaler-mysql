@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main(){
+    int p,flag=0;
+    printf("enter  a no:");
+    scanf("%d",&p);
+    int i=2;
+    while(i<(p/2)+1){
+        if(p%i==0){
+            flag=1;
+        }
+        i++;
+    }
+    if(flag==0){
+        printf(" prime");
+    }
+    else {printf("not prime");}
+}
